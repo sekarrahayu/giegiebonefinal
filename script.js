@@ -63,7 +63,7 @@ const cartItemsElement = document.getElementById('cart-items');
         </div>
         <hr>
       `;
-    }).join('');
+    });
 
     itemsHTML += `<div><strong>Total: Rp. ${total.toLocaleString('id-ID')}</strong></div>`;
     cartItemsElement.innerHTML = itemsHTML;
@@ -112,5 +112,5 @@ const cartItemsElement = document.getElementById('cart-items');
   modal.hide();
 
   // Redirect ke WhatsApp
-  window.open(waUrl, '_blank');
+  window.open(waUrl);
 });
